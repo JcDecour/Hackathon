@@ -1,0 +1,22 @@
+{
+  "name": "hackathon-vin",
+  "version": "1.0.0",
+  "description": "hackathon avec Elsa et jean-Charles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JcDecour/Hackathon-vin.git"
+  },
+  "author": "Elsa Jean-Charles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JcDecour/Hackathon-vin/issues"
+  },
+  "homepage": "https://github.com/JcDecour/Hackathon-vin#readme",
+  "dependencies": {
+    "angular": "^1.6.2"
+  }
+}
