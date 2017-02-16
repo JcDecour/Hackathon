@@ -1,0 +1,32 @@
+<div id="formulaire">
+	<div id="Questionnaire">
+	<h3>Questionnaire</h3>
+	<form id="add-student" name="studentForm">
+		<label for="firstname">Prénom : </label>
+		<input id="firstname" name="firstname" ng-model="$ctrl.firstname">
+		
+		<label for="lastname">NOM : </label>
+		<input id="lastname" name="lastname">
+		<label for="Age">Age</label>
+		<input id="age" name="age">
+		<label for="address">Adresse</label>
+		<input id="address" name="address">
+		s
+		<label for="email"></label>Email
+		<input id="email" name="email">
+		<button>Ajoutez</button>
+	</form>
+	</div>
+	<div id="students">
+		<h3>Vos données</h3>
+		<table >
+			<tr>
+				<td>{{$ctrl.firstname}}</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+</div>
