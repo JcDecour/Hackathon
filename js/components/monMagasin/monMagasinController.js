@@ -33,7 +33,7 @@ angular.module('monMagasin').controller('monMagasinController', ["$http", "$scop
 					 this.wines = market.products
 					 console.log(this.wines);
 					 L.marker(marker).addTo(map)
-			     .bindPopup(`<h5>${market.name}</h5><p>${market.description.slice(0, 10)}</p><span>${market.products}</span>`)
+			     .bindPopup(`<h5>${market.name}</h5><p>${market.description.slice(0, 10)}`)
 			     .openPopup();
 					 // `<h3>${market.name}</h3>`
 				 })
