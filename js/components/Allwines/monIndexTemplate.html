@@ -1,5 +1,5 @@
 <!-- Header Carousel -->
-<header id="myCarousel" class="carousel slide">
+<header id="myCarousel" class="carousel slide" ng-controller="monIndexController">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -186,14 +186,14 @@
 		<!-- /.row -->
 
 		<!-- Projects Row -->
-		<div class="row">
+		<div class="row" ng-controller="allWinesController">
 				<!-- Sidebar Column -->
-				<!-- <div class="col-md-3">
+				<div class="col-md-3">
 						<div class="list-group">
 								<div class="input-group">
 									<span class="label label-info">Info</span>
 									<br/>
-
+										<!-- <span class="input-group-addon" id="sizing-addon2">@</span> -->
 										<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
 								</div>
 								<a href="about.html" class="list-group-item">About</a>
@@ -213,18 +213,89 @@
 								<a href="404.html" class="list-group-item">404</a>
 								<a href="pricing.html" class="list-group-item">Pricing Table</a>
 						</div>
-				</div> -->
-				<div class="col-md-3 img-portfolio" ng-repeat="wine in $ctrl.wines">
+				</div>
+				<div class="col-md-3 img-portfolio" ng-repeat="wine in $ctrl.allWines">
 						<a href="portfolio-item.html">
-								<img class="img-responsive img-hover" style="height: 100px; width: 50px;" src="{{'http://wine.wildcodeschool.fr' + wine.picture}}" alt="">
+								<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
 						</a>
 						<h3>
-								<a href="portfolio-item.html">{{wine.name}}</a>
+								<a href="portfolio-item.html">Project Name</a>
 						</h3>
-						<p>{{wine.description}}</p>
+						<p>{{wines.description}}</p>
 				</div>
+				<!-- <div class="col-md-3 img-portfolio">
+						<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+						</a>
+						<h3>
+								<a href="portfolio-item.html">Project Name</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-3 img-portfolio">
+						<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+						</a>
+						<h3>
+								<a href="portfolio-item.html">Project Name</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-3 img-portfolio">
+						<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+						</a>
+						<h3>
+								<a href="portfolio-item.html">Project Name</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-3 img-portfolio">
+						<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+						</a>
+						<h3>
+								<a href="portfolio-item.html">Project Name</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-3 img-portfolio">
+						<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+						</a>
+						<h3>
+								<a href="portfolio-item.html">Project Name</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-3 img-portfolio">
+						<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+						</a>
+						<h3>
+								<a href="portfolio-item.html">Project Name</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-3 img-portfolio">
+						<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+						</a>
+						<h3>
+								<a href="portfolio-item.html">Project Name</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-3 img-portfolio">
+						<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+						</a>
+						<h3>
+								<a href="portfolio-item.html">Project Name</a>
+						</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div> -->
 		</div>
 		<!-- /.row -->
 
 		<hr>
-</div>
