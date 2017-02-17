@@ -1,7 +1,7 @@
 <div id="Magasin">
     <!-- Page Content -->
     <div class="container">
-        <h1>Nos Magasins</h1>
+        <h1 style="text-align: center;">Nos Magasins</h1>
 
         <!-- Content Row -->
         <div class="row">
@@ -15,61 +15,55 @@
 
             </div>
             <!-- Contact Details Column -->
-            <div class="col-md-4">
+            <div id="listmap" class="col-md-4">
                 <!-- <div class="list-group">
                     <div class="input-group">
                         <span class="label label-info">Info</span>
                     </div> -->
-                    <div class="list-group" ng-repeat="market in $ctrl.markets">
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">{{market.name}}</h4>
-                            <p class="list-group-item-text">{{market.description.slice(0, 20);}}</p>
-                        </a>
-                    </div>
+                <div class="list-group" ng-repeat="market in $ctrl.markets">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">{{market.name}}</h4>
+                        <p class="list-group-item-text">{{market.description.slice(0, 20);}}</p>
+                    </a>
+                    <p>
+                        3481 Melrose Place<br>Beverly Hills, CA 90210<br>
+                    </p>
+                    <p><i class="fa fa-phone"></i>
+                        <abbr title="Phone">P</abbr>: (123) 456-7890</p>
+                    <p><i class="fa fa-envelope-o"></i>
+                        <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com</a>
+                    </p>
+                    <p><i class="fa fa-clock-o"></i>
+                        <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                    <ul class="list-unstyled list-inline list-social-icons">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
-    <!-- /.row -->
-    <!-- Content Row -->
-    <div class="row">
-        <!-- Map Column -->
-        <div class="col-md-8">
-            <!--  Map -->
-
-            <div id="mapid"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></div>
-
-        </div>
-        <!-- Contact Details Column -->
-        <!-- <div class="col-md-4">
-            <h3>Contact Details</h3>
-            <p>
-                3481 Melrose Place<br>Beverly Hills, CA 90210<br>
-            </p>
-            <p><i class="fa fa-phone"></i>
-            <abbr title="Phone">P</abbr>: (123) 456-7890</p>
-            <p><i class="fa fa-envelope-o"></i>
-                <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com</a>
-            </p>
-            <p><i class="fa fa-clock-o"></i>
-            <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p> -->
-           <!--  <ul class="list-unstyled list-inline list-social-icons">
-                <li>
-                    <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                </li>
-
-            </ul>
-        </div> -->
-
-            </ul>
-
         </div>
         <!-- /.row -->
+        
+        <!-- /.row -->
+        <div class="row">
+        		<div class="col-lg-12" ng-repeat="wine in $ctrl.wines">
+        				<h2 class="page-header">Nos produits</h2>
+        		</div>
+        		<div class="col-md-4 col-sm-6">
+        				<a href="portfolio-item.html">
+        						<img class="img-responsive img-portfolio img-hover" src="{{'http://wine.wildcodeschool.fr' + wine.picture}}" alt="">
+        				</a>
+        		</div>
+          </div>
     </div>

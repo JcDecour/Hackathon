@@ -19,18 +19,21 @@ angular.module('monMagasin').controller('monMagasinController', ["$http", "$scop
 		}).addTo(map);
 
 		// MARKET
-
+// http://wine.wildcodeschool.fr/api/v1/wines/:id
 		$http.get('http://wine.wildcodeschool.fr/api/v1/markets').then((response) => {
 				// this callback will be called asynchronously
 				// when the response is available
+
 
 				 this.markets = response.data
 				 this.markets.forEach((market) => {
 					 let marker = market.position.split(", ").map((element) => {
 						 return Number(element);
 					 });
+					 this.wines = market.products
+					 console.log(this.wines);
 					 L.marker(marker).addTo(map)
-			     .bindPopup(`<h5>${market.name}</h5><p>${market.description.slice(0, 10)}</p>`)
+			     .bindPopup(`<h5>${market.name}</h5><p>${market.description.slice(0, 10)}</p><span>${market.products}</span>`)
 			     .openPopup();
 					 // `<h3>${market.name}</h3>`
 				 })

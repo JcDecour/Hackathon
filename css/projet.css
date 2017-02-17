@@ -1,6 +1,12 @@
 #mapid {
-height: 400px;
-};
+    height: 400px;
+}
+
 .col-md-3 img-portfolio ng-scope {
-  height: 450px;
-};
+    height: 450px;
+}
+
+#listmap {
+  height: 400px;
+  overflow: scroll;
+}
