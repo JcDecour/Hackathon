@@ -1,35 +1,33 @@
 <div id="Magasin">
     <!-- Page Content -->
     <div class="container">
-        <p>ELSA template2 </p>
-        <!-- Page Heading/Breadcrumbs -->
+        <h1>Nos Magasins</h1>
+
+        <!-- Content Row -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Contact
-                <small>Subheading</small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                </li>
-                <li class="active">Contact</li>
-            </ol>
-        </div>
-    </div>
-    <!-- /.row -->
-    <!-- Content Row -->
-    <div class="row">
-        <!-- Map Column -->
-        <div class="col-md-8">
-            <!-- Embedded Google Map -->
-            <!--                 <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe> <-->
-            <p>ELSA template out</p>
-            <div id="mapid"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></div>
-            <!-- <div id="mapid" width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></div> -->
-            <p>ELSA template IN</p>
-            
-        </div>
-        <!-- Contact Details Column -->
-        <div class="col-md-4">
+            <!-- Map Column -->
+            <div class="col-md-8">
+                <!-- Embedded Google Map -->
+                <!--                 <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe> <-->
+                <div id="mapid" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></div>
+
+
+            </div>
+            <!-- Contact Details Column -->
+            <div class="col-md-4">
+                <!-- <div class="list-group">
+                    <div class="input-group">
+                        <span class="label label-info">Info</span>
+                    </div> -->
+                    <div class="list-group" ng-repeat="market in $ctrl.markets">
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">{{market.name}}</h4>
+                            <p class="list-group-item-text">{{market.description.slice(0, 20);}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-4">
             <h3>Contact Details</h3>
             <p>
                 3481 Melrose Place<br>Beverly Hills, CA 90210<br>
@@ -55,7 +53,7 @@
                     <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
                 </li>
             </ul>
+        </div> -->
         </div>
+        <!-- /.row -->
     </div>
-    <!-- /.row -->
-</div>
