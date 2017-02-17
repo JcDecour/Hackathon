@@ -28,14 +28,14 @@
 						<a href="pricing.html" class="list-group-item">Pricing Table</a>
 				</div>
 		</div> -->
-		<div class="col-md-3 img-portfolio" ng-repeat="wine in $ctrl.wines">
+		<div class="col-md-3 img-portfolio" style="height: 400px;" ng-repeat="wine in $ctrl.wines">
 				<a href="portfolio-item.html">
 						<img class="img-responsive img-hover" style="height: 100px; width: 50px;"     src="{{'http://wine.wildcodeschool.fr' + wine.picture}}" alt="">
 				</a>
 				<h3>ici js
 						<a href="portfolio-item.html">{{wine.name}}</a>
 				</h3>
-				<p>{{wine.description}}</p>
+				<p>{{wine.description.slice(0, 400)+"..."}}</p>
 		</div>
 </div>
 <!-- /.row -->
