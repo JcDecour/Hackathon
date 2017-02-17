@@ -1,29 +1,20 @@
 angular.module('monIndex').controller('monIndexController', [function(){
-	let monFormulaireCollection;
-	this.controlName ;
-	this.controlAge;
-	this.controlAdress;
-	this.controlEmail;
-
-	this.firstname = "name"
-	
-}])
 
 
+}]);
 
-// angular.module("monFormulaire").controller('monFormulaireController', ['$http', function monFormulaireController($http){
-// 	let monFormulaireCollection;
-// 	this.controlName ;
-// 	this.controlAge;
-// 	this.controlAdress;
-// 	this.controlEmail;
+.controller('allWinesController', [function(){
 
-// 	this.add = () => {
-// 		if (this.student.lastname) {
-// 			this.students.push(new Student(this.student))
-// 		} else {
-// 			alert("lastname can't be empty")
-// 		}
-// 	}
-
-// }])
+$http({
+  method: 'GET',
+  url: 'http://wine.wildcodeschool.fr/api/v1/wines'
+}).then(function successCallback(response) {
+    // this callback will be called asynchronously
+    // when the response is available
+		console.log(response);
+  }, function errorCallback(response) {
+		console.log("zut");
+    // called asynchronously if an error occurs
+    // or server returns response with an error status.
+  });
+}]);
